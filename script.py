@@ -29,7 +29,8 @@ print("\n")
 
 
 def question_template(question, option, answer):
-    
+    r = 0
+    w = 0
     print(question)
     
     for options in option:
@@ -41,10 +42,13 @@ def question_template(question, option, answer):
     a = input("You say: ")
     
     if a == answer:
+        r += 1
         print("\nYou were right!\n")
+        print(r)
     else:
+        w += 1
         print("\nYou were wrong...\n")
-    
+        print(w)
 
 
 # Este seria el llamado de la funcion de todas las preguntas, todavia estamos clarificando la funcion:
