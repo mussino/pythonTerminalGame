@@ -19,7 +19,7 @@ options = (
     ("A. Ecuador", "B. Peru", "C. Costa Rica", "D. Cambodia"),
     ("A. Queen Victoria", "B. Queen Cleopatra", "C. Mary, Queen of Scots", "D. Catherine the Great"),
     ("A. 3", "B. 2", "C. 1", "D. 0"),
-    ("A. Modjadjiskloof", "South Africa", "B. Omsk, Russia", "C. Pokahara, Nepal", "D. Dalat, Vietnam"),
+    ("A. Modjadjiskloof, South Africa", "B. Omsk, Russia", "C. Pokahara, Nepal", "D. Dalat, Vietnam"),
     ("A. Florence, Italy", "B. Paris, France", "C. Budapest, Hungary", "D. Pauillac, France"),
     ("A. Brittney Spears", "B. Katy Perry", "C. Cardi B.", "D. Lady Gaga"),
     ("A. Malta", "B. Italy", "C. Germany", "D. France"),
@@ -35,7 +35,7 @@ question_num = 0
 #Game starts here:
 
 player_name = input("\nWelcome to Triva Quest...would you please write down your name: ")
-print("\nThanks for playing with us " + player_name + " we are gonna see a series of questions, if you answer 5 questions wrongs, you are OUT!\n")
+print("\nThanks for playing with us " + player_name + " we are gonna see a series of questions, let's see how much you know about life!\n")
 time.sleep(5)
 input("Are you ready? y/n: ")
 print("\n")
@@ -64,18 +64,21 @@ print("--------------------")
 print("\n      RESULTS       \n")
 print("--------------------")
 
-print("answers: ", end="")
+print("Correct Answers: ", end="")
 for answer in answers:
     print(answer, end=" ")
 print()
 
-print("guesses: ", end="")
+print("Your Guesses: ", end="")
 for guess in guesses:
     print(guess, end=" ")
 print()
 
 score = int(score / len(questions) * 100)
 print(f"\nYour score was: {score}%\n")
-print("--------------------")
+if score <= 40:
+    print("I suggest go read some BOOKS!!!")
+print("END OF GAME")    
+print("--------------------\n")
 
 
