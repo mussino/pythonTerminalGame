@@ -14,7 +14,7 @@ q5 = Question("How many birthdays does the Queen of England celebrate?", ["\nA. 
 q6 = Question("Where can you have a beer inside a 6,000 year-old tree?", ["\nA. Modjadjiskloof", "South Africa", "B. Omsk, Russia", "C. Pokahara, Nepal", "D. Dalat, Vietnam\n"], "A")
 q7 = Question("Where can you drink wine and run a marathon at the same time?", ["\nA. Florence, Italy", "B. Paris, France", "C. Budapest, Hungary", "D. Pauillac, France\n"], "D")
 q8 = Question("Which celebrity wore a meat dress?", ["\nA. Brittney Spears", "B. Katy Perry", "C. Cardi B.", "D. Lady Gaga\n"], "D")
-q9 = Question("Which country created spaghettis, ice cream that looks like spaghetti?", ["\nA. Malta", "B. Italy", "C. Germany", "D. France\n"], "")
+q9 = Question("Which country created spaghettis, ice cream that looks like spaghetti?", ["\nA. Malta", "B. Italy", "C. Germany", "D. France\n"], "C")
 q10 = Question("On which island do cats outnumber humans?", ["\nA. Heigun Island", "B. Ao Island", "C. Iwai Island", "D. Ya Island\n"], "B")
 
 
